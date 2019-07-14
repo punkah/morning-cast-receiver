@@ -12,9 +12,9 @@ export default class News extends Component {
       + 'apiKey=cffdb009bc5343679e8dbe592efb1d36';
     /*eslint-disable*/
     const response = await fetch(url);
-    console.log(response);
+    // console.log(response);
     const { articles } = await response.json();
-    console.log(articles);
+    // console.log(articles);
     this.setState({ news: articles });
   }
 
@@ -23,7 +23,9 @@ export default class News extends Component {
     return (
       <div className="news">
         {news.map(newsArticle => (
-          <div className="news--title">{newsArticle.title}</div>
+          <div key={newsArticle.title} className="news--title">
+            {newsArticle.title}
+          </div>
         ))}
       </div>
     );

@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import News from './page/News';
+import Weather from './page/Weather';
 import './App.scss';
 
 class Page extends Component {
@@ -22,7 +23,9 @@ class Page extends Component {
           <div className="app--box">
             <News />
           </div>
-          <div className="app--box" />
+          <div className="app--box">
+            <Weather />
+          </div>
           <div className="app--box" />
           <div className="app--box" />
         </div>

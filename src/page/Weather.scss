@@ -1,0 +1,17 @@
+.weather {
+  border: 1px solid black;
+  background-image: url(../img/sunset.jpg);
+  background-size: cover;
+  font-size: 36px;
+  font-family: "Roboto", sans-serif;
+  text-align: end;
+  padding: 1rem;
+
+  &--title {
+    margin: 1rem;
+    padding: 0.5rem;
+    border: 1px solid black;
+    color: black;
+    background-color: white;
+  }
+}
