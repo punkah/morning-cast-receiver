@@ -1,0 +1,42 @@
+$frost: #dde2e3;
+$lead: #9aacb8;
+$burnt_amber: #b37c57;
+$nightfall: #3c455c;
+$nightfall_dark: #262b39;
+$bark: #60412b;
+
+body {
+  margin: 0;
+  font-family: "Merriweather", serif;
+  background-color: black;
+  color: $frost;
+  font-size: 10px;
+}
+
+.app {
+  height: 100vh;
+}
+
+.app--flex {
+  flex-wrap: wrap;
+  display: flex;
+  height: 100%;
+}
+
+.app--box {
+  flex: 1 0 50%;
+  display: flex;
+  background-color: grey;
+}
+
+.app--box:nth-of-type(2) {
+  background-color: darkgray;
+}
+
+.app--box:nth-of-type(3) {
+  background-color: darkkhaki;
+}
+
+.app--box:nth-of-type(4) {
+  background-color: darkgoldenrod;
+}
